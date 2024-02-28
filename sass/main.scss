@@ -1,0 +1,71 @@
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bgcolor: #01a3a4;
+$textcolor: #222f3e;
+$secondary_textcolor: #0abde3;
+$secondary_textcolor_2: #fff;
+$primary_fontsize: 52px;
+$fontsize: 40px;
+$fontfamily: 'Roboto';
+
+
+body {
+    background: $bgcolor;
+}
+
+.main_header {
+    // width: 100vw;
+    // height: 100vh;
+    margin: 3em 0;
+    @include flex_properties;
+
+    h1 {
+        color: $textcolor;
+        font-size: $primary_fontsize;
+        border-radius: 8px;
+
+        &:hover {
+            color: $secondary_textcolor_2;
+            background: $secondary_textcolor;
+        }
+        // &::after{
+        //     content:' Punk';
+        // }
+    }
+
+}
+
+.hero-section {
+    font-family: $fontfamily;
+    font-size: $fontsize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
